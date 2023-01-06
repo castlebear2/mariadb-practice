@@ -2,7 +2,7 @@ select version(), current_date(), now();
 
 -- 수학 함수, 사칙 연산 가능.
 select sin(pi() / 4), 1+2+3+4 from dual;
-
+select sin(pi() / 4), 1+2+3+4 from dual;
 -- 대소문자 구분x
 Select version(), cuRrent_date(), noW() from dual;
 
