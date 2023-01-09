@@ -57,3 +57,4 @@ load data local infile 'd:\pet.txt' into table pet;
 select name, species 
 from pet 
 where birth >= '1998-01-01';
+
