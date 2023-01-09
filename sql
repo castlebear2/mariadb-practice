@@ -14,6 +14,7 @@ from dual;
 create table pet (
    name varchar(100),
    owner varchar(20),
+   
    species varchar(20),
    gender char(1),
    birth date,
@@ -41,6 +42,11 @@ update pet
 set name ='성타니'
 where name = '성탄이';
 
+update pet 
+	set death = null
+    where name != 'Bowser';
+
+
 -- delete: DML(D)
 delete from pet where name = '성타니';
 
@@ -48,4 +54,6 @@ delete from pet where name = '성타니';
 load data local infile 'd:\pet.txt' into table pet;
 
 -- select 
-select name, species from pet where name = 'BOwser';
+select name, species 
+from pet 
+where birth >= '1998-01-01';
